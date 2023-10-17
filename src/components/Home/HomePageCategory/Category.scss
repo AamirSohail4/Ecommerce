@@ -1,0 +1,26 @@
+@import "../../../css-config/mixins.scss";
+.shop-by-catigory {
+    margin: 50px 0px;
+}
+.catigories {
+    display: flex;
+    flex-flow: wrap;
+    gap: 10px;
+}
+.category {
+    background-color: black;
+    overflow: hidden;
+    cursor: pointer;
+   width: 24%;
+img {
+        width: 100%;
+        display: block;
+        transition: all ease 0.3s;
+    }
+        img:hover {
+            transform: scale(1.5);
+        }
+}
+    
+               
+                

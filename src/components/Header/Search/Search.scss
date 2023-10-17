@@ -1,0 +1,90 @@
+span.close-tab svg {
+    position: absolute;
+        font-size: 39px;
+        top: 32px;
+        cursor: pointer;
+        display: flex;
+        margin: 0 auto;
+        right: 13%;
+        color:rgba(0, 0, 0, 0.5)
+}
+.search-model {
+position:fixed;
+width:100%;
+height:100%;
+z-index:99;
+top:0px;
+left:0px;
+background-color:white;
+transform:translateY(0%);
+animation:slideSearchWindo 0.9s;
+}
+.form-field {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+input {
+    width: 100%;
+    max-width: 1200px;
+    height: 80px;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 600;
+    color: #212121;
+    outline: none;
+    outline: none;
+    border: none;
+    text-transform: uppercase;
+}
+@keyframes slideSearchWindo {
+    0%{transform: translateY(100%);}
+        100% {
+             transform: translateY(0%);
+         }
+    
+}
+.search-result-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.search-result {
+    overflow: auto;
+    margin: 20px 0px;
+    height: calc(100vh - 160px);
+}
+.search-result-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 0px;
+    gap: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+span.product-name {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 16px;
+    line-height: 1;
+    margin-bottom: 10px;
+    font-weight: 600;
+    display: block;
+    padding-right: 25px
+}
+
+span.product-desc{
+    display:block;
+    align-items: center;
+    gap: 11px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 5px;
+    text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        color:rgba(0, 0, 0, 0.5);
+}

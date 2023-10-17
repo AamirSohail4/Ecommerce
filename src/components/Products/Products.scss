@@ -1,0 +1,36 @@
+@import "../../css-config/mixins.scss";
+.product-Container {
+    margin: 75px 0px;
+    .sec-heading{
+        margin-bottom: 25px;
+        font-size: 24px;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+
+    }
+.sec-heading::after {
+    content: "";
+    height: 3px;
+    width: 50px;
+    display: block;
+    margin-top: 10px;
+    background-color: #8e2de2;
+}
+.Products {
+    display: flex;
+    flex-flow: wrap;
+    gap: 20px;
+    
+}
+
+.home_page_product_container{
+    display: flex;
+    
+}
+
+.Product_card{
+    display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+}

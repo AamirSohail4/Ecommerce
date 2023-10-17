@@ -1,0 +1,123 @@
+@import '../../css-config/mixins.scss';
+.Singleproduct-main-content {
+  margin: 75px 0px;
+}
+.Singleproduct-layout {
+  width: 1200px;
+  margin: 0 auto;
+}
+.Category.title {
+  font-size: 25px;
+  margin: 30px 0px;
+  font-family: initial;
+  text-wrap: wrap;
+}
+.Single-product-page {
+  display: flex;
+  flex-flow: row;
+}
+.left-side {
+  background-color: rgba(0, 0, 0, 0.1);
+  height: 600px;
+  width: 600px;
+  flex-shrink: 0;
+  .img {
+    width: 100%;
+    display: block;
+  }
+}
+
+.right-side {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 0px 35px;
+  span.name {
+    font-size: 32px;
+    margin-bottom: 20px;
+    line-height: 28px;
+  }
+  span.price {
+    font-size: 24px;
+    margin-bottom: 20px;
+    line-height: 32px;
+  }
+  span.desc {
+    font-size: 16px;
+    margin-bottom: 24px;
+    line-height: 20px;
+    color: #6b6b6b;
+  }
+  .cart-button {
+    margin-top: 30px;
+    display: flex;
+  }
+  .quantity-buttons {
+    width: fit-content;
+    cursor: pointer;
+    height: 50px;
+    margin-right: 10px;
+    display: flex;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+  }
+  .quantity-buttons span {
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.5);
+    &:nth-child(1) {
+      border: 1px solid rgba(0, 0, 0, 0.2);
+    }
+    &:nth-child(2) {
+      width: 60px;
+    }
+    &:nth-child(3) {
+      border: 1px solid rgba(0, 0, 0, 0.2);
+    }
+  }
+  button.add-to-cart-button {
+    color: white;
+    background-color: #8e2de2;
+    width: 180px;
+    height: 50px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    border-bottom: 3px solid #6516aa;
+    cursor: pointer;
+  }
+  span.divider {
+    content: '';
+    height: 1px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    margin: 20px 0px 23px 0px;
+  }
+}
+.info-item {
+  .text-bold {
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    color: black;
+
+    &:nth-child(1) {
+      margin-bottom: 20px;
+    }
+  }
+
+  span {
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+    color: #6b6b6b;
+  }
+
+  svg {
+    margin: 0 5px;
+  }
+}
